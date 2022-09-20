@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-transform:uppercase ;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/* common width allignment start */
+.common{
+    width:1170px;
+    margin:auto;
+    text-align: center;
+}
+ /* common width allignment end */
+
+/* basic css content  end  */
+
+
+/* nav part design css start */
+nav{
+    background-color: #02918b;
+}
+nav .content{
+    display: flex;
+    align-items: center;
+   
+}
+nav .content .img{
+    width: 20%;
+}
+ 
+nav .content .menu{
+    width: 80%;
+}
+nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .menu ul li a{
+    display: inline-block;
+    color: #fff;
+    padding: 26px 25px;
+    font-size: 12px;
+    font-weight: 800px;
+    transition: 0.7s;
+}
+/* using hover transition for menu bar  */
+nav .menu ul li a:hover{
+    color:#cfc91d;
+    background-color: #FFF4EC;
+    border-radius: 35px;
+    font-size:25px ;
+    font-weight: 1000px;
+    
+}
+/* nav part design css end  */ 
+  /* banner part css start   */
+#banner{ 
+    
+    background-image:url(../img/bannerphoto2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 828px;
+    color:#fff;
+    position: relative;
+    z-index: 1;
+}
+/* using pshudo class start */
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top:0;
+    opacity: 0.66;
+    z-index: -1;
+    /* using pshudo class end */
+}
+.ban_flex{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.ban_flex .bContent h3{
+    text-transform: none;
+    font-size: 30px;
+    font-weight: 400px;
+}
+.ban_flex .bContent h1{
+    font-size: 68px;
+    font-weight: 800px;
+    letter-spacing: 30px;
+}
+.ban_flex .bContent p{
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+.ban_flex .bContent img{
+    display: block;
+    margin:52px auto;
+}
+.ban_flex .bContent a{
+    display: inline-block;
+    background-color: #cfc91d;
+    color:black;
+    font-size:14px ;
+    font-weight:800px ;
+    letter-spacing: 5px;
+    padding:20px 43px;
+    transition: 0.7s;
+
+}
+/* hover for [link me] design  */
+.ban_flex .bContent a:hover{
+    background-color: #02918b;
+    color: #cfc91d;
+    border-radius: 36px;  
+    font-size: 26px; 
+    letter-spacing:10px;
+
+}
+/* banner part css end 
